@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, slateblue, lightblue);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    height: 90%; /* Keeps it within the viewport */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Main Content */
+main img {
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.links a {
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    color: slateblue;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.links a:hover,
+.links a:focus {
+    color: lightblue;
+    background-color: slateblue;
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Footer */
+footer {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer p {
+    margin: 20px;
+}
+
+/* Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
